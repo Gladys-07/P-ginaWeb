@@ -1,0 +1,270 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #000000;
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #444; /* Línea divisora en el lado derecho */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para un efecto más elegante */
+}
+
+.sidebar .nav-link {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.contact-btn {
+    margin-top: auto;
+    background-color: #292929;
+    border-color: #00ff88;
+    color: #00ff88;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #2b2b2b;
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Línea divisora para la navbar */
+.navbar {
+    border-bottom: 1px solid #444; /* Línea divisora en la parte inferior */
+}
+
+form {
+    max-width: 400px;
+}
+
+button {
+    width: 150px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.start-box,
+.login-form,
+.create-account-form,
+.complete-profile-form {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.primary-button, .secondary-button, .back-button {
+    display: block; /* Para que ocupen todo el ancho */
+    text-decoration: none; /* Para los enlaces que actúan como botón */
+    background-color: #134b13;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; /* Centrar el texto dentro del botón/enlace */
+}
+
+.secondary-button {
+    background-color: #134b13;
+}
+
+.back-button {
+    background-color: #134b13;
+}
+
+.primary-button:hover, .secondary-button:hover, .back-button:hover {
+    opacity: 0.9;
+}
+
+/* Estilos para los formularios */
+.login-form, .create-account-form, .complete-profile-form {
+    text-align: left;
+}
+
+.login-form h2, .create-account-form h2, .complete-profile-form h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="text"],
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.help-text {
+    font-size: 0.8em;
+    color: #ccc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.help-text a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.help-text a:hover {
+    text-decoration: underline;
+}
+
+.next-btn {
+    background-color: #198754;
+    border: none;
+    color: white;
+    padding: 0.75rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    font-weight: bold;
+}
+
+/* Estilos específicos para Opcion.html */
+
+/* Estilos para el encabezado */
+.header {
+    background-color: #434e5a;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2rem;
+    color: #343a40;
+}
+
+/* Estilos para las tarjetas */
+.card-option {
+    background-color: #14301a;
+    color: #316635;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(35, 32, 36, 0.473);
+}
+
+.card-option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #052918;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer h4 {
+    color: #343a40;
+}
+
+.contact-link {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: white;
+}
+
+.active-card {
+    border: 2px solid #243042;
+    background-color: #29492d;
+}
+
+.modal-content {
+    background-color: #343a40;
+    color: #f0f0f0;
+}
+
+.btn-warning {
+    background-color: #198754;
+    border: none;
+    color: #f0f0f0;
+}
+
+.btn-warning:hover {
+    background-color: #145c3e;
+}
+
+.text-dark-success {
+    color: #145c3e; /* Verde oscuro */
+}
+

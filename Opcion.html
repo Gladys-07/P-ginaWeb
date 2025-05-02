@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Convocatorias</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mawi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Mi_biomo.html">Mi Biomo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><span class="dropdown-item-text"><strong>Nombre:</strong> Juan Pérez</span></li>
+                            <li><span class="dropdown-item-text"><strong>Correo:</strong> juan.perez@ejemplo.com</span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row g-4 justify-content-center text-center">
+            <!-- Tarjeta con enlace directo a Mi_biomo.html -->
+            <div class="col-md-4">
+                <a href="Mi_biomo.html" class="text-decoration-none">
+                    <div class="card card-option p-4 bg-secondary text-white h-100" style="cursor: pointer;">
+                        <div class="card-icon text-center">
+                            <i class="fa-solid fa-earth-americas text-success fa-6x"></i>
+                        </div>
+                        <h3 class="text-center">Asistente de Mi Biomo</h3>
+                        <p class="text-center">El asistente te ayudará a conocer todos los datos sobre tu biomotorización y en todo aquello que necesites saber, así como subir datos nuevos.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-option p-4 bg-secondary text-white" style="cursor: pointer;">
+                    <div class="card-icon">
+                        <i class="fas fa-file-alt text-success fa-6x"></i>
+                    </div>
+                    <h3>Asistente de Convocatorias</h3>
+                    <p>Participa en nuevas convocatorias genera nuevos anteproyectos. Registre aquí todos los datos referentes a la nueva formulación de anteproyecto.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card card-option p-4 bg-secondary text-white" style="cursor: pointer;">
+                    <div class="card-icon">
+                        <i class="fa-solid fa-search text-success fa-6x"></i>
+                    </div>
+                    <h3>Asistente Explorador de Proyectos</h3>
+                    <p>Interactúa con todas aquellas convocatorias abiertas y formula anteproyectos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <button class="btn btn-outline-light" id="contactSupport" data-bs-toggle="modal" data-bs-target="#supportModal">Contacta con el soporte</button>
+    </div>
+
+    <!-- Modal de soporte -->
+    <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="supportModalLabel">Soporte</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fas fa-envelope me-2"></i>Correo: soporte@ejemplo.com</p>
+                    <p><i class="fas fa-phone me-2"></i>Teléfono: +1 234 567 890</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="JS/script.js"></script> --> <!-- Ya no necesario -->
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biomo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Nuestro archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para la línea de separación */
+        .navbar {
+            border-bottom: 1px solid #444;
+        }
+        .sidebar {
+            border-right: 1px solid #444;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <!-- Barra superior -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="Opcion.html">Mawi</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><span class="dropdown-item-text"><strong>Nombre:</strong> Juan Pérez</span></li>
+                            <li><span class="dropdown-item-text"><strong>Correo:</strong> juan.perez@ejemplo.com</span></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="index.html">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra lateral izquierda -->
+    <div class="d-flex">
+        <div class="sidebar bg-dark text-white p-3" style="width: 250px; min-height: 100vh;">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Opcion.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="Mi_biomo.html">Mi Biomo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="explorador.html">Explorador de Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="convocatoria1.html">Asistente de Proyectos</a>
+                </li>
+            </ul>
+            <div class="mt-5">
+                <button class="btn btn-outline-light w-100" id="contactSupport">
+                    <i class="fa-solid fa-phone"></i> Contacta con el soporte
+                </button>
+            </div>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content container mt-5" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="text mb-4">Mi Biomo</h2>
+            <p>Aquí puedes gestionar y visualizar los datos relacionados con tu biomotorización.</p>
+        </div>
+    </div>
+
+    <!-- Pop-up de soporte -->
+    <div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="supportModalLabel">Soporte</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p><i class="fas fa-envelope me-2"></i>Correo: soporte@ejemplo.com</p>
+                    <p><i class="fas fa-phone me-2"></i>Teléfono: +1 234 567 890</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+</html>
